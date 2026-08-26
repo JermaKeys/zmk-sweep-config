@@ -57,11 +57,13 @@
 
         num_layer {
             bindings = <
-                &kp LBKT        &kp N1     &kp N2      &kp N3      &kp RBKT      &trans      &trans      &trans      &trans     &trans
+                &kp LBKT        &kp N1     &kp N2      &kp N3      &kp RBKT      &trans      &trans      &trans      &trans     &bootloader
                 &kp LEFT_SHIFT  &kp N4     &kp N5      &kp N6      &kp EQUAL     &kp LEFT    &kp DOWN    &kp RIGHT   &kp UP     &trans
-                &kp LC(UP)     &kp N7      &kp N7      &kp N9      &kp BSLH      &trans      &trans      &trans      &trans     &trans
+                &kp LC(UP)     &kp N7      &kp N7      &kp N9      &kp BSLH      &trans      &trans      &bt BT_SEL 0      &bt BT_SEL 1     &bt BT_SEL 2
                                                   &kp N0      &kp LGUI      &trans      &trans
             >;
+
+            // need to add tri layer for admin functions such as entering bootloader mode and changing bluetooth conection
         };
 
     };
