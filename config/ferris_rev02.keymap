@@ -14,6 +14,10 @@
 #define SYM_L 2
 #define NUM_L 3
 
+    chosen {
+        zmk,matrix-transform = &default_transform;
+    };
+
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick-tap-ms = <200>; };
